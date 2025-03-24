@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="logo">Mon Portfolio</div>
+        <ul class="nav-links">
+            <li><a href="#bilan">Bilan</a></li>
+            <li class="dropdown">
+                <a href="projets.html">Projets</a>
+                <ul class="dropdown-menu">
+                    <li><a href="projets-1ere-annee.html">1ère année</a></li>
+                    <li><a href="projets-2eme-annee.html">2ème année</a></li>
+                    <li><a href="projets-3eme-annee.html">3ème année</a></li>
+                </ul>
+            </li>
+            
+            <li><a href="#about">À propos</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="burger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <!-- Page d'accueil -->
+    <header class="hero">
+        <div class="hero-content">
+            <img src="mathieu.png" alt="Photo de moi" class="profile-photo">
+            <h1>Bonjour, je suis <span>Votre Prénom</span></h1>
+        </div>
+    </header>
+
+    <main>
+        <section id="bilan">
+            <h2>Bilan Personnel</h2>
+            <p>Présentation de mon évolution, compétences et expériences.</p>
+        </section>
+
+        <section id="projets">
+            <h2>Mes Projets</h2>
+            <div class="projects-grid">
+                <div class="project-card">Projet 1</div>
+                <div class="project-card">Projet 2</div>
+            </div>
+        </section>
+
+        <section id="about">
+            <h2>À propos de moi</h2>
+            <p>Présentation de mon parcours et de mes passions.</p>
+        </section>
+
+        <section id="contact">
+            <h2>Contactez-moi</h2>
+            <form>
+                <input type="text" placeholder="Votre nom" required>
+                <input type="email" placeholder="Votre email" required>
+                <textarea placeholder="Votre message"></textarea>
+                <button type="submit">Envoyer</button>
+            </form>
+        </section>
+    </main>
+
+</body>
+</html>
