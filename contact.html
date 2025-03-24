@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Mon Portfolio</title>
+    <link rel="stylesheet" href="contact.css">
+    <script defer src="script.js"></script>  <!-- Inclure le script ici -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="logo">Mon Portfolio</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Accueil</a></li>
+            <li class="dropdown">
+                <a href="#">Bilan</a>
+                <ul class="dropdown-menu">
+                    <li><a href="bilan-1ere-annee.html">1ère année</a></li>
+                    <li><a href="bilan-2eme-annee.html">2ème année</a></li>
+                    <li><a href="bilan-3eme-annee.html">3ème année</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a href="#">Projets</a>
+                <ul class="dropdown-menu">
+                    <li><a href="projets-1ere-annee.html">1ère année</a></li>
+                    <li><a href="projets-2eme-annee.html">2ème année</a></li>
+                    <li><a href="projets-3eme-annee.html">3ème année</a></li>
+                </ul>
+            </li>
+            <li><a href="about.html">À propos</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="burger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <!-- Section de Contact -->
+    <main>
+        <section id="contact">
+            <h2>Contactez-moi</h2>
+            <form>
+                <input type="text" placeholder="Votre nom" required>
+                <input type="email" placeholder="Votre email" required>
+                <textarea placeholder="Votre message"></textarea>
+                <button type="submit">Envoyer</button>
+            </form>
+        </section>
+    </main>
+
+</body>
+</html>
