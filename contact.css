@@ -212,11 +212,231 @@ button:hover {
         padding: 10px;
     }
 }
+/* ... (vos styles existants) ... */
 
-/* 🔹 Responsive pour la photo de profil */
+/* 🔹 Formulaire de contact */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 50vw; /* Prendre 50% de la largeur de l'écran */
+    min-width: 350px; /* Taille minimum pour éviter que ce soit trop petit */
+    max-width: 800px; /* Limiter la taille maximale */
+    margin: 20px auto; /* Centrer le formulaire */
+    padding: 20px;
+    background: #222;
+    border-radius: 8px;
+    box-sizing: border-box;
+    border: 1px solid #4A90E2; /* Bordure bleue */
+}
+
+/* 🔹 Styles des champs de saisie */
+input, textarea {
+    padding: 12px;
+    background: #222;
+    border: 1px solid #4A90E2;
+    color: white;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+input:focus, textarea:focus {
+    outline: none;
+    border-color: #357ABD; /* Bordure qui change de couleur lors du focus */
+}
+
+/* 🔹 Styles du bouton */
+button { /* Style pour le bouton submit du formulaire */
+    background-color: #4A90E2;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: #357ABD;
+}
+
+/* 🔹 Informations de contact supplémentaires */
+.additional-contact-info {
+    margin-top: 30px; /* Espace au-dessus de cette section */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centrer les éléments horizontalement */
+    gap: 15px; /* Espace entre les éléments */
+    width: 50vw; /* Prendre 50% de la largeur de l'écran */
+    min-width: 350px; /* Taille minimum */
+    max-width: 800px; /* Limiter la taille maximale */
+    margin-left: auto; /* Centrer le bloc */
+    margin-right: auto; /* Centrer le bloc */
+}
+
+.contact-detail {
+    font-size: 16px;
+    color: #F5F5F5;
+    margin: 5px 0; /* Léger espacement vertical */
+}
+
+.contact-button {
+    display: inline-block;
+    background-color: #4A90E2; /* Couleur bleue principale */
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none; /* Enlever le soulignement des liens */
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    text-align: center;
+    min-width: 220px; /* Donner une largeur minimale aux boutons */
+    box-sizing: border-box; /* S'assurer que le padding ne dépasse pas la largeur */
+}
+
+.contact-button:hover {
+    background-color: #357ABD; /* Assombrir au survol */
+}
+
+/* Optionnel: Si vous voulez un style différent pour le bouton LinkedIn */
+/*
+ . linkedin-button {                                      *
+ background-color: #0077B5; // Couleur officielle LinkedIn
+ }
+
+ .linkedin-button:hover {
+ background-color: #005582;
+ }
+ */
+
+/* 🔹 Menu Déroulant (Dropdown) */
+/* ... (le reste de vos styles existants) ... */
+
+/* 🔹 Responsive Design */
 @media screen and (max-width: 768px) {
-    .profile-photo {
-        width: 150px;  /* Taille plus petite sur les écrans plus petits */
-        height: 150px;
+    /* ... (vos styles responsive existants pour Nav Links et Burger) ... */
+
+    /* Formulaire */
+    form {
+        width: 80vw; /* Sur les petits écrans, prendre 80% de la largeur */
+        padding: 15px;
+    }
+
+    input, textarea {
+        font-size: 14px;
+    }
+
+    button { /* Bouton submit du formulaire */
+        padding: 10px;
+    }
+
+    /* Informations de contact supplémentaires en mode responsive */
+    .additional-contact-info {
+        width: 80vw; /* Adapter la largeur pour les petits écrans */
+    }
+
+    .contact-button {
+        padding: 10px 15px; /* Ajuster le padding des boutons */
+        min-width: 180px; /* Ajuster la largeur minimale */
+        font-size: 14px; /* Ajuster la taille de la police */
+    }
+
+    .contact-detail {
+        font-size: 14px; /* Ajuster la taille de la police */
     }
 }
+/* ... (vos styles existants) ... */
+
+/* ... (vos styles existants pour .navbar, form, etc.) ... */
+
+/* 🔹 Informations de contact supplémentaires */
+.additional-contact-info {
+    margin-top: 40px; /* Plus d'espace après le formulaire */
+    display: flex;
+    flex-direction: column; /* Organise les détails textuels puis les liens d'action */
+    align-items: center; /* Centre les groupes horizontalement */
+    gap: 20px; /* Espace entre le bloc de texte et le bloc de liens */
+    width: 90%; /* Occupe plus de largeur pour une meilleure disposition */
+    max-width: 600px; /* Limite la largeur max pour les grands écrans */
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center; /* Centre le texte dans les détails */
+}
+
+.contact-text-details p.contact-detail {
+    font-size: 16px;
+    color: #F5F5F5;
+    margin: 8px 0; /* Espace entre email et téléphone */
+}
+
+.contact-action-links {
+    display: flex; /* Aligne le logo LinkedIn et le lien CV sur une ligne */
+    align-items: center; /* Centre verticalement les éléments sur la ligne */
+    justify-content: center; /* Centre les liens horizontalement s'ils prennent moins de place */
+    gap: 30px; /* Espace entre le logo LinkedIn et le lien CV */
+    margin-top: 10px; /* Espace au-dessus des liens d'action */
+}
+
+.linkedin-logo-link .linkedin-icon {
+    height: 32px; /* Ajustez la taille du logo selon votre image */
+    width: auto;
+    display: block; /* Pour éviter tout espace supplémentaire sous l'image */
+    transition: opacity 0.3s ease;
+}
+
+.linkedin-logo-link:hover .linkedin-icon {
+    opacity: 0.75; /* Effet de survol subtil */
+}
+
+.cv-download-link {
+    color: #4A90E2; /* Couleur bleue de votre thème */
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 15px;
+    padding: 8px 12px; /* Un peu de padding pour faciliter le clic */
+    border-radius: 5px;
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.cv-download-link:hover,
+.cv-download-link:focus {
+    color: #357ABD; /* Couleur au survol */
+    text-decoration: underline;
+    /* Optionnel: ajouter un fond très léger au survol si vous le souhaitez */
+    /* background-color: rgba(74, 144, 226, 0.1); */
+}
+
+
+/* 🔹 Responsive Design */
+@media screen and (max-width: 768px) {
+    /* ... (vos styles responsive existants pour Nav Links et Burger, et formulaire) ... */
+
+    .additional-contact-info {
+        width: 90%;
+        margin-top: 30px;
+        gap: 15px;
+    }
+
+    .contact-text-details p.contact-detail {
+        font-size: 14px; /* Un peu plus petit sur mobile */
+    }
+
+    .contact-action-links {
+        /* Sur mobile, on peut les empiler s'ils sont trop larges côte à côte,
+         *          ou réduire l'espacement. Pour l'instant, on garde en ligne. */
+        gap: 20px; /* Espacement réduit sur mobile */
+        flex-wrap: wrap; /* Permet aux éléments de passer à la ligne si pas assez de place */
+    }
+
+    .linkedin-logo-link .linkedin-icon {
+        height: 28px; /* Logo légèrement plus petit sur mobile */
+    }
+
+    .cv-download-link {
+        font-size: 14px;
+        padding: 8px 10px;
+    }
+}
+
+

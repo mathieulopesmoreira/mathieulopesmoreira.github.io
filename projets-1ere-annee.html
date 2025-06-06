@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Portfolio - Projets 1ère Année</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="projets-1ere-annee.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">Mathieu Lopes Moreira</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Accueil</a></li>
+            <li class="dropdown">
+                <a href="#">Bilan</a> <ul class="dropdown-menu">
+                    <li><a href="bilan-1ere-annee.html">1ère année</a></li>
+                    <li><a href="bilan-2eme-annee.html">2ème année</a></li>
+                    <li><a href="bilan-3eme-annee.html">3ème année</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a href="#">Projets</a> <ul class="dropdown-menu">
+                    <li><a href="projets-1ere-annee.html" class="active-link-dropdown">1ère année</a></li>
+                    <li><a href="projets-2eme-annee.html">2ème année</a></li>
+                    <li><a href="projets-3eme-annee.html">3ème année</a></li>
+                </ul>
+            </li>
+
+            <li><a href="about.html">À propos</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="burger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <header class="page-header"> <h1>Projets de Première Année</h1>
+        <p>Découverte des fondamentaux et premières réalisations concrètes.</p>
+    </header>
+
+    <main>
+        <section id="semestre-1-projets">
+            <h2>Semestre 1</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <h3>Création d’un reporting Excel/VBA</h3>
+                    <p class="project-short-description">Développement d'un outil de reporting automatisé avec Excel et VBA.</p>
+                    <button class="btn-know-more" data-modal-target="modal-s1-excel-vba">En savoir plus</button>
+                </div>
+                <div class="project-card">
+                    <h3>Écriture et lecture de fichier</h3>
+                    <p class="project-short-description">Manipulation de fichiers (texte, CSV) en Python pour le traitement de données.</p>
+                    <button class="btn-know-more" data-modal-target="modal-s1-fichiers">En savoir plus</button>
+                </div>
+                <div class="project-card">
+                    <h3>Analyse exploratoire simple avec Sphinx</h3>
+                    <p class="project-short-description">Documentation et analyse initiale de jeux de données avec l'outil Sphinx.</p>
+                    <button class="btn-know-more" data-modal-target="modal-s1-sphinx">En savoir plus</button>
+                </div>
+                <div class="project-card">
+                    <h3>Production de données en entreprise</h3>
+                    <p class="project-short-description">Compréhension du cycle de vie et des enjeux de la donnée en milieu professionnel.</p>
+                    <button class="btn-know-more" data-modal-target="modal-s1-prod-donnees">En savoir plus</button>
+                </div>
+                <div class="project-card">
+                    <h3>Présentation d’un territoire économique</h3>
+                    <p class="project-short-description">Analyse et présentation des caractéristiques socio-économiques d'une région.</p>
+                    <button class="btn-know-more" data-modal-target="modal-s1-territoire">En savoir plus</button>
+                </div>
+                <div class="project-card">
+                    <h3>Mise en œuvre d’une enquête</h3>
+                    <p class="project-short-description">Conception, réalisation et analyse des résultats d'une enquête.</p>
+                    <button class="btn-know-more" data-modal-target="modal-s1-enquete">En savoir plus</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="semestre-2-projets">
+            <h2>Semestre 2</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <h3>Conception d’une base de données</h3>
+                    <p class="project-short-description">Modélisation (MCD, MLD) et création d'une base de données relationnelle.</p>
+                    <button class="btn-know-more" data-modal-target="modal-s2-bdd">En savoir plus</button>
+                </div>
+                <div class="project-card">
+                    <h3>Datavisualisation</h3>
+                    <p class="project-short-description">Création de graphiques et tableaux de bord interactifs pour l'exploration de données.</p>
+                    <button class="btn-know-more" data-modal-target="modal-s2-dataviz">En savoir plus</button>
+                </div>
+                <div class="project-card">
+                    <h3>ADRD</h3>
+                    <p class="project-short-description">Projet complet : analyse de données, reporting et datavisualisation.</p>
+                    <button class="btn-know-more" data-modal-target="modal-s2-adrd">En savoir plus</button>
+                </div>
+                <div class="project-card">
+                    <h3>Portfolio</h3>
+                    <p class="project-short-description">Création du portfolio professionnel en ligne (ce site !).</p>
+                    <button class="btn-know-more" data-modal-target="modal-s2-portfolio">En savoir plus</button>
+                </div>
+                <div class="project-card">
+                    <h3>Estimation par échantillonnage</h3>
+                    <p class="project-short-description">Application des techniques d'échantillonnage pour l'estimation statistique.</p>
+                    <button class="btn-know-more" data-modal-target="modal-s2-echantillonnage">En savoir plus</button>
+                </div>
+                <div class="project-card">
+                    <h3>Régression sur des données réelles</h3>
+                    <p class="project-short-description">Modélisation prédictive avec des techniques de régression linéaire.</p>
+                    <button class="btn-know-more" data-modal-target="modal-s2-regression">En savoir plus</button>
+                </div>
+                <div class="project-card">
+                    <h3>Indicateurs de performance</h3>
+                    <p class="project-short-description">Définition, calcul et suivi d'indicateurs clés de performance (KPI).</p>
+                    <button class="btn-know-more" data-modal-target="modal-s2-kpi">En savoir plus</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div id="modal-s1-excel-vba" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h2>Création d’un reporting Excel/VBA</h2>
+            <p>Ce projet a consisté à analyser des besoins de reporting, concevoir une structure de données sous Excel, et développer des macros VBA pour automatiser la collecte, le traitement et la présentation des informations. L'objectif était d'améliorer l'efficacité et la fiabilité du suivi d'indicateurs clés.</p>
+            <a href="#fictif-telecharger-excel-vba" class="btn-download">Télécharger le projet (fictif)</a>
+        </div>
+    </div>
+    <div id="modal-s1-fichiers" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h2>Écriture et lecture de fichier</h2>
+            <p>Apprentissage des techniques de lecture et d'écriture de différents formats de fichiers (texte, CSV, JSON) en Python. Gestion des exceptions et structuration des données pour permettre leur importation et exportation aisée pour des analyses ultérieures.</p>
+            <a href="#fictif-telecharger-fichiers" class="btn-download">Télécharger le projet (fictif)</a>
+        </div>
+    </div>
+     <div id="modal-s1-sphinx" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h2>Analyse exploratoire simple avec Sphinx</h2>
+            <p>Utilisation de Sphinx pour documenter un jeu de données et le processus d'analyse. Ce projet combinait la documentation technique avec des techniques d'analyse exploratoire de données (EDA) pour identifier les premières tendances, distributions et anomalies au sein des données.</p>
+            <a href="#fictif-telecharger-sphinx" class="btn-download">Télécharger le projet (fictif)</a>
+        </div>
+    </div>
+    <div id="modal-s1-prod-donnees" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h2>Production de données en entreprise</h2>
+            <p>Étude approfondie des processus de collecte, validation, nettoyage, stockage et mise à disposition des données au sein d'une organisation. Le projet a couvert les aspects qualitatifs, la gouvernance des données et les cadres réglementaires (ex: RGPD).</p>
+            <a href="#fictif-telecharger-prod-donnees" class="btn-download">Télécharger le projet (fictif)</a>
+        </div>
+    </div>
+    <div id="modal-s1-territoire" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h2>Présentation d’un territoire économique</h2>
+            <p>Collecte, traitement et analyse de données socio-économiques (démographie, emploi, tissu entrepreneurial, secteurs d'activité) pour caractériser un territoire spécifique. Le livrable était une présentation synthétique des dynamiques et enjeux économiques de la zone étudiée.</p>
+            <a href="#fictif-telecharger-territoire" class="btn-download">Télécharger le projet (fictif)</a>
+        </div>
+    </div>
+    <div id="modal-s1-enquete" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h2>Mise en œuvre d’une enquête</h2>
+            <p>Projet complet allant de la définition d'une problématique de recherche à l'analyse des résultats. Cela incluait l'élaboration d'un questionnaire pertinent, le choix d'une méthode d'échantillonnage, l'administration de l'enquête, la collecte des réponses et les premières analyses statistiques descriptives.</p>
+            <a href="#fictif-telecharger-enquete" class="btn-download">Télécharger le projet (fictif)</a>
+        </div>
+    </div>
+
+    <div id="modal-s2-bdd" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h2>Conception d’une base de données</h2>
+            <p>Apprentissage des concepts de modélisation de données (Merise : MCD, MLD, MPD), création de schémas de base de données relationnelles, et implémentation avec un Système de Gestion de Base de Données (SGBD) via des requêtes SQL (DDL, DML).</p>
+            <a href="#fictif-telecharger-bdd" class="btn-download">Télécharger le projet (fictif)</a>
+        </div>
+    </div>
+    <div id="modal-s2-dataviz" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h2>Datavisualisation</h2>
+            <p>Utilisation d'outils de datavisualisation (tels que Tableau, Power BI, ou des bibliothèques Python comme Matplotlib, Seaborn, Plotly) pour représenter graphiquement des ensembles de données. L'objectif était de créer des visualisations claires, pertinentes et interactives pour faciliter la compréhension et la communication des insights.</p>
+            <a href="#fictif-telecharger-dataviz" class="btn-download">Télécharger le projet (fictif)</a>
+        </div>
+    </div>
+    <div id="modal-s2-adrd" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h2>ADRD (analyse de données, reporting et datavisualisation)</h2>
+            <p>Projet intégrateur de fin de semestre, mettant en application l'ensemble des compétences acquises pour traiter un jeu de données de bout en bout : nettoyage et préparation des données, analyse statistique exploratoire et confirmatoire, création de rapports synthétiques et de tableaux de bord dynamiques pour présenter les résultats.</p>
+            <a href="#fictif-telecharger-adrd" class="btn-download">Télécharger le projet (fictif)</a>
+        </div>
+    </div>
+    <div id="modal-s2-portfolio" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h2>Portfolio</h2>
+            <p>Conception et développement du présent site web portfolio. Ce projet a permis de mettre en pratique les technologies web front-end (HTML5, CSS3, JavaScript) pour créer une vitrine professionnelle présentant mes compétences, mes expériences et les projets réalisés au cours de ma formation.</p>
+            <a href="#fictif-telecharger-portfolio" class="btn-download">Consulter le code source (fictif)</a>
+        </div>
+    </div>
+    <div id="modal-s2-echantillonnage" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h2>Estimation par échantillonnage</h2>
+            <p>Étude théorique et pratique des différentes méthodes d'échantillonnage (aléatoire simple, systématique, stratifié, par grappes). Application de ces techniques pour estimer des paramètres clés d'une population (moyenne, proportion, total) à partir d'un échantillon représentatif, en calculant les marges d'erreur et les intervalles de confiance.</p>
+            <a href="#fictif-telecharger-echantillonnage" class="btn-download">Télécharger le projet (fictif)</a>
+        </div>
+    </div>
+    <div id="modal-s2-regression" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h2>Régression sur des données réelles</h2>
+            <p>Application de modèles de régression linéaire (simple et multiple) sur des jeux de données concrets. Ce projet incluait la vérification des hypothèses du modèle, l'interprétation des coefficients, l'évaluation de la performance du modèle (R², erreurs) et son utilisation pour effectuer des prédictions.</p>
+            <a href="#fictif-telecharger-regression" class="btn-download">Télécharger le projet (fictif)</a>
+        </div>
+    </div>
+    <div id="modal-s2-kpi" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h2>Indicateurs de performance</h2>
+            <p>Apprentissage de la méthodologie pour définir des Indicateurs Clés de Performance (KPI) pertinents et alignés avec des objectifs stratégiques. Le projet comprenait la sélection des bons indicateurs, la manière de les calculer, de les suivre dans le temps et de les interpréter pour évaluer la performance d'un processus, d'un produit ou d'une activité.</p>
+            <a href="#fictif-telecharger-kpi" class="btn-download">Télécharger le projet (fictif)</a>
+        </div>
+    </div>
+
+    <div id="overlay"></div>
+
+    <script defer src="script.js"></script>
+    <script defer src="projets-1ere-annee.js"></script>
+</body>
+</html>
