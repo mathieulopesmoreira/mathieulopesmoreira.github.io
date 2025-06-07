@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Portfolio - Projets 1ère Année</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="projets-1ere-annee.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">Mathieu Lopes Moreira</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Accueil</a></li>
+            <li class="dropdown">
+                <a href="#">Bilan</a> <ul class="dropdown-menu">
+                    <li><a href="bilan-1ere-annee.html">1ère année</a></li>
+                    <li><a href="bilan-2eme-annee.html">2ème année</a></li>
+                    <li><a href="bilan-3eme-annee.html">3ème année</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a href="#">Projets</a> <ul class="dropdown-menu">
+                    <li><a href="projets-1ere-annee.html" class="active-link-dropdown">1ère année</a></li>
+                    <li><a href="projets-2eme-annee.html">2ème année</a></li>
+                    <li><a href="projets-3eme-annee.html">3ème année</a></li>
+                </ul>
+            </li>
+
+            <li><a href="about.html">À propos</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="burger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <header class="page-header"> <h1>Projets de Première Année</h1>
+        <p>Découverte des fondamentaux et premières réalisations concrètes.</p>
+    </header>
+
+    <main>
+        <section id="semestre-1-projets">
+            <h2>Semestre 1</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <h3>Création d’un reporting Excel/VBA</h3>
+                    <p class="project-short-description">Développement d'un outil de reporting automatisé avec Excel et VBA.</p>
+                    <button class="btn-know-more" data-modal-target="modal-s1-excel-vba">En savoir plus</button>
+                </div>
+                <div class="project-card">
+                    <h3>Écriture et lecture de fichier</h3>
+                    <p class="project-short-description">Manipulation de fichiers (JSON, CSV) en Python pour le traitement de données.</p>
+                    <button class="btn-know-more" data-modal-target="modal-s1-fichiers">En savoir plus</button>
+                </div>
+                <div class="project-card">
+                    <h3>Analyse exploratoire simple avec Sphinx</h3>
+                    <p class="project-short-description">Documentation et analyse initiale de jeux de données avec l'outil Sphinx.</p>
+                    <button class="btn-know-more" data-modal-target="modal-s1-sphinx">En savoir plus</button>
+                </div>
+                <div class="project-card">
+                    <h3>Production de données en entreprise</h3>
+                    <p class="project-short-description">Compréhension du cycle de vie et des enjeux de la donnée en milieu professionnel.</p>
+                    <button class="btn-know-more" data-modal-target="modal-s1-prod-donnees">En savoir plus</button>
+                </div>
+                <div class="project-card">
+                    <h3>Présentation d’un territoire économique</h3>
+                    <p class="project-short-description">Analyse et présentation des caractéristiques socio-économiques d'une région.</p>
+                    <button class="btn-know-more" data-modal-target="modal-s1-territoire">En savoir plus</button>
+                </div>
+                <div class="project-card">
+                    <h3>Mise en œuvre d’une enquête</h3>
+                    <p class="project-short-description">Conception, réalisation et analyse des résultats d'une enquête.</p>
+                    <button class="btn-know-more" data-modal-target="modal-s1-enquete">En savoir plus</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="semestre-2-projets">
+            <h2>Semestre 2</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <h3>Conception d’une base de données</h3>
+                    <p class="project-short-description">Modélisation (MCD, MLD) et création d'une base de données relationnelle.</p>
+                    <button class="btn-know-more" data-modal-target="modal-s2-bdd">En savoir plus</button>
+                </div>
+                <div class="project-card">
+                    <h3>Datavisualisation</h3>
+                    <p class="project-short-description">Création de graphiques et tableaux de bord interactifs pour l'exploration de données.</p>
+                    <button class="btn-know-more" data-modal-target="modal-s2-dataviz">En savoir plus</button>
+                </div>
+                <div class="project-card">
+                    <h3>ADRD</h3>
+                    <p class="project-short-description">Projet complet : analyse de données, reporting et datavisualisation.</p>
+                    <button class="btn-know-more" data-modal-target="modal-s2-adrd">En savoir plus</button>
+                </div>
+                <div class="project-card">
+                    <h3>Portfolio</h3>
+                    <p class="project-short-description">Création du portfolio professionnel en ligne (ce site !).</p>
+                    <button class="btn-know-more" data-modal-target="modal-s2-portfolio">En savoir plus</button>
+                </div>
+                <div class="project-card">
+                    <h3>Estimation par échantillonnage</h3>
+                    <p class="project-short-description">Application des techniques d'échantillonnage pour l'estimation statistique.</p>
+                    <button class="btn-know-more" data-modal-target="modal-s2-echantillonnage">En savoir plus</button>
+                </div>
+                <div class="project-card">
+                    <h3>Régression sur des données réelles</h3>
+                    <p class="project-short-description">Modélisation prédictive avec des techniques de régression linéaire.</p>
+                    <button class="btn-know-more" data-modal-target="modal-s2-regression">En savoir plus</button>
+                </div>
+                <div class="project-card">
+                    <h3>Indicateurs de performance</h3>
+                    <p class="project-short-description">Définition, calcul et suivi d'indicateurs clés de performance (KPI).</p>
+                    <button class="btn-know-more" data-modal-target="modal-s2-kpi">En savoir plus</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div id="modal-s1-excel-vba" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h2>Création d’un reporting Excel/VBA</h2>
+            <p>La création d’un reporting Excel VBA pour un BUT SD en première année repose sur une application dotée de UserForms reliés à une base de données contenant les notes et les coefficients des modules. L’utilisateur saisit ou sélectionne l’étudiant via le UserForm et accède à un tableau de bord interactif où chaque module affiche sa note ainsi que son coefficient. Le code VBA récupère ces informations pour calculer directement la moyenne pondérée en fonction des coefficients, puis affiche le résultat sur le tableau de bord. Un simple clic permet de mettre à jour le rapport et de suivre l’évolution des performances pédagogiques.</p>
+            <a href="vba.xlsm" class="btn-download">Télécharger le projet </a>
+        </div>
+    </div>
+    <div id="modal-s1-fichiers" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h2>Écriture et lecture de fichier</h2>
+            <p>Le projet d’écriture et lecture de fichiers consiste à créer un script Python qui lit un fichier JSON, extrait les données structurées (par exemple des objets contenant des clés « nom », « date », « valeur ») puis les convertit en un format CSV exploitable. En pratique, on utilise le module json pour charger le contenu du JSON dans des dictionnaires Python, puis le module csv pour écrire chaque enregistrement sous forme de ligne, en définissant les en-têtes à partir des clés communes. </p>
+        </div>
+    </div>
+     <div id="modal-s1-sphinx" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h2>Analyse exploratoire simple avec Sphinx</h2>
+            <p>Le projet d’analyse exploratoire avec Sphinx IQ3 consistait à importer l’enquête sur la vie étudiante à Niort, puis à construire plusieurs graphiques (histogrammes, diagrammes en barres, camemberts, nuages de points) pour visualiser les principaux indicateurs : répartition démographique, niveau de satisfaction vis-à-vis des infrastructures (logement, restauration, loisirs), temps de trajet domicile-campus, et taux de participation aux activités associatives. À l’aide des fonctions de filtres et de croisements dynamiques de Sphinx IQ3, on a pu identifier les profils d’étudiants les plus concernés par certaines problématiques.</p>
+            <a href="sphinx.zip" class="btn-download">Télécharger le projet </a>
+        </div>
+    </div>
+    <div id="modal-s1-prod-donnees" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h2>Production de données en entreprise</h2>
+            <p>Le projet « Production de données en entreprise » avec Excel consistait à importer les fichiers open data de l’Insee, nettoyer et structurer les données, puis utiliser des tableaux croisés dynamiques pour calculer le taux de chômage par région et par tranche d’âge, ainsi que la répartition hommes/femmes. Des formules de base (pourcentages, totaux) ont permis de synthétiser ces indicateurs. Enfin, des graphiques (barres pour la répartition hommes/femmes, courbes pour l’évolution du chômage) ont mis en évidence les principales disparités régionales et de genre.</p>
+            <a href="insee.pdf" class="btn-download">Télécharger le projet </a>
+        </div>
+    </div>
+    <div id="modal-s1-territoire" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h2>Présentation d’un territoire économique</h2>
+            <p>Le projet « Présentation d’un territoire économique » consistait à élaborer un PowerPoint professionnel présentant les territoires ayant accueilli les Jeux Olympiques, avec un focus sur Séoul 1988. Via des diapositives claires et structurées, on décrivait le contexte économique de la ville hôte : ses infrastructures développées pour l’événement (stades, réseaux de transport), l’impact sur l’emploi et l’urbanisme, et l’attractivité touristique générée. Chaque diapositive utilisait des graphiques synthétiques pour illustrer l’évolution du PIB local, les investissements publics et l’essor des secteurs clés (construction, hôtellerie), offrant ainsi une vision globale de l’influence économique des JO de Séoul.</p>
+            <a href="seoul.pptx" class="btn-download">Télécharger le projet </a>
+        </div>
+    </div>
+    <div id="modal-s1-enquete" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h2>Mise en œuvre d’une enquête</h2>
+            <p>Le projet « Mise en œuvre d’une enquête » consistait à créer, paramétrer et diffuser un questionnaire sous Sphinx IQ3 destiné aux étudiants pour recueillir leurs habitudes et perceptions liées au sport. À partir de grilles de questions fermées et ouvertes (pratiques sportives, fréquence, satisfaction des installations, motivations), on a configuré les différents types de questions (choix multiples, échelle de Likert, zones de saisie libre). L’interface de Sphinx IQ3 a permis de suivre en temps réel le taux de réponse, de vérifier la cohérence des données et de préparer ultérieurement des analyses statistiques selon les profils (année d’étude, filière, genre).</p>
+        </div>
+    </div>
+
+    <div id="modal-s2-bdd" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h2>Conception d’une base de données</h2>
+            <p>Le projet « Conception d’une base de données » pour les sauniers de l’Île de Ré reposait sur la modélisation conceptuelle avec Looping MCD afin de structurer les entités (sauniers, bassins, récoltes, ventes). À partir de ce MCD, on a généré le schéma relationnel puis créé la base MySQL via phpMyAdmin. Enfin, une interface Tkinter en Python a été développée pour automatiser la saisie, la modification et l’interrogation des données des sauniers.</p>
+            <a href="selmarin.zip" class="btn-download">Télécharger le projet </a>
+        </div>
+    </div>
+    <div id="modal-s2-dataviz" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h2>Datavisualisation</h2>
+            <p>Le projet de datavisualisation consiste à créer une infographie synthétique à partir de données de l'INSEE. L'objectif est d'extraire et de visualiser les informations clés sur la population des 15-29 ans et leurs études entre 2010 et 2021. L'infographie visera à rendre ces données complexes accessibles et compréhensibles pour en tirer le maximum de connaissances sur cette tranche d'âge.</p>
+            <a href="dataviz.pdf" class="btn-download">Télécharger le projet </a>
+        </div>
+    </div>
+    <div id="modal-s2-adrd" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h2>ADRD (analyse de données, reporting et datavisualisation)</h2>
+            <p>Le projet a englobé l'intégralité du cycle de vie de la donnée, de sa source à sa présentation visuelle. Il a commencé par la collecte et le nettoyage de données brutes issues de Calyxis et de l'Observatoire MaVie, processus méticuleusement exécuté via Python. Ensuite, une interface graphique conviviale a été développée à l'aide de Tkinter, offrant une interaction facilitée avec les données. Au cœur de l'analyse, le projet a mis l'accent sur le calcul et l'interprétation d'indicateurs de performance clés, incluant l'application du test statistique du Chi-deux pour dégager des relations significatives. Enfin, toutes ces étapes ont convergé vers la création d'un tableau de bord de datavisualisation dynamique sur Power BI, servant de support pour un reporting clair et percutant, transformant ainsi des informations complexes en insights exploitables.</p>
+        </div>
+    </div>
+    <div id="modal-s2-portfolio" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h2>Portfolio</h2>
+            <p>Conception et développement du présent site web portfolio. Ce projet a permis de mettre en pratique les technologies web front-end (HTML5, CSS3, JavaScript) pour créer une vitrine professionnelle présentant mes compétences, mes expériences et les projets réalisés au cours de ma formation.</p>
+            <a href="portfolio.zip" class="btn-download">Consulter le code source </a>
+        </div>
+    </div>
+    <div id="modal-s2-echantillonnage" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h2>Estimation par échantillonnage</h2>
+            <p>Le projet d'estimation par échantillonnage a consisté à réaliser des estimations d'une population à l'aide de strates, en utilisant le langage R. Ce travail a impliqué la conception d'un plan d'échantillonnage stratifié pour garantir la représentativité et la précision des estimations, suivi de l'application des méthodes statistiques appropriées dans R pour calculer les estimateurs et leurs intervalles de confiance.</p>
+            <a href="estimation.zip" class="btn-download">Télécharger le projet </a>
+        </div>
+    </div>
+    <div id="modal-s2-regression" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h2>Régression sur des données réelles</h2>
+            <p>Le projet de régression sur données réelles a consisté à prédire le prix des ventes immobilières dans les Deux-Sèvres. Pour ce faire, des modèles de régression linéaire simple ont été développés et appliqués en utilisant le langage R, permettant d'établir des relations prédictives basées sur des caractéristiques immobilières concrètes.</p>
+            <a href="regression.zip" class="btn-download">Télécharger le projet </a>
+        </div>
+    </div>
+    <div id="modal-s2-kpi" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h2>Indicateurs de performance</h2>
+            <p>Ce projet a consisté à mener une analyse approfondie et concrète de la performance de l'entreprise Fleury Michon. L'objectif principal était d'identifier, de calculer et d'interpréter des indicateurs clés de performance pertinents pour l'activité de l'entreprise. Cette démarche a abouti à la création d'un tableau de bord synthétique et visuel. Ce tableau de bord a permis de consolider toutes les données d'analyse, offrant ainsi une vue d'ensemble claire et rapide de la santé financière, opérationnelle, ou commerciale de Fleury Michon. Il servait à transformer des données brutes en informations exploitables pour le suivi et potentiellement la prise de décision.</p>
+        </div>
+    </div>
+
+    <div id="overlay"></div>
+
+    <script defer src="script.js"></script>
+    <script defer src="projets-1ere-annee.js"></script>
+</body>
+</html>

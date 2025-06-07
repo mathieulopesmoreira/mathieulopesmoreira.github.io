@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Mon Portfolio</title>
+    <link rel="stylesheet" href="contact.css">
+    <script defer src="script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">Mathieu Lopes Moreira</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Accueil</a></li>
+            <li class="dropdown">
+                <a href="#">Bilan</a>
+                <ul class="dropdown-menu">
+                    <li><a href="bilan-1ere-annee.html">1ère année</a></li>
+                    <li><a href="bilan-2eme-annee.html">2ème année</a></li>
+                    <li><a href="bilan-3eme-annee.html">3ème année</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a href="#">Projets</a>
+                <ul class="dropdown-menu">
+                    <li><a href="projets-1ere-annee.html">1ère année</a></li>
+                    <li><a href="projets-2eme-annee.html">2ème année</a></li>
+                    <li><a href="projets-3eme-annee.html">3ème année</a></li>
+                </ul>
+            </li>
+            <li><a href="about.html">À propos</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="burger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <main>
+        <section id="contact">
+            <h2>Contactez-moi</h2>
+            <form>
+                <input type="text" placeholder="Votre nom" required>
+                <input type="email" placeholder="Votre email" required>
+                <textarea placeholder="Votre message"></textarea>
+                <button type="submit">Envoyer</button>
+            </form>
+
+            <div class="additional-contact-info">
+                <div class="contact-text-details">
+                    <p class="contact-detail">Email: mathieu.lpsmor@gmail.com</p>
+                    <p class="contact-detail">Téléphone: 06 49 30 25 83</p>
+                </div>
+                <div class="contact-action-links">
+                    <a href="https://www.linkedin.com/in/mathieu-lopes-moreira-24606b327" target="_blank" class="linkedin-logo-link" aria-label="Mon profil LinkedIn">
+                        <img src="linkedin.png" alt="Logo LinkedIn" class="linkedin-icon">
+                    </a>
+                    <a href="cv.pdf" download class="cv-download-link">Télécharger mon CV</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+</body>
+</html>
