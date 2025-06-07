@@ -379,7 +379,7 @@ button:hover {
 }
 
 .linkedin-logo-link .linkedin-icon {
-    height: 32px; /* Ajustez la taille du logo selon votre image */
+    height: 64px; /* Ajustez la taille du logo selon votre image */
     width: auto;
     display: block; /* Pour éviter tout espace supplémentaire sous l'image */
     transition: opacity 0.3s ease;
@@ -430,7 +430,7 @@ button:hover {
     }
 
     .linkedin-logo-link .linkedin-icon {
-        height: 28px; /* Logo légèrement plus petit sur mobile */
+        height: 64px; /* Logo légèrement plus petit sur mobile */
     }
 
     .cv-download-link {
